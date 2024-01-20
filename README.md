@@ -3,8 +3,8 @@ This is an on-ramp merging decision-making algorithm from a paper "Interaction-A
 
 <img width="407" alt="图片1" src="https://github.com/zhexilian/On-ramp-merging-decision-making/assets/148358711/7a1c9049-62c1-4200-ace0-87af2a8f59f6">
 
-The data is extracted from NGSIM, you can check it in "dataset.npy". The columns in the data are, in order, ego AV speed,  ego AV acceleration, distance to the end of the accelerating lane, distance between ego AV and V1, relative speed between ego AV and V1, distance between ego AV and V2, relative speed between ego AV and V2, distance between ego AV and V3, relative speed between ego AV and V3, distance between ego AV and V4, relative speed between ego AV and V4, distance between ego AV and V5, relative speed between ego AV and V5, and the action. If V1, V4, or V5 is not exist, the distance and the relative speed is set to a really large number.\<br>
-The decision-making algorithm is an expert demonstration based Q-learning method and the optimization objective is to maximum the probability of selecting an expert action.\<br>
+The data is extracted from NGSIM, you can check it in "dataset.npy". The columns in the data are, in order, ego AV speed,  ego AV acceleration, distance to the end of the accelerating lane, distance between ego AV and V1, relative speed between ego AV and V1, distance between ego AV and V2, relative speed between ego AV and V2, distance between ego AV and V3, relative speed between ego AV and V3, distance between ego AV and V4, relative speed between ego AV and V4, distance between ego AV and V5, relative speed between ego AV and V5, and the action. If V1, V4, or V5 is not exist, the distance and the relative speed is set to a really large number.
+The decision-making algorithm is an expert demonstration based Q-learning method and the optimization objective is to maximum the probability of selecting an expert action.
 
 To run this algorithm:
 
