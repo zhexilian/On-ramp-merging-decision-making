@@ -30,7 +30,7 @@ def main(args):
     optimizer = optim.Adam(model.parameters(), lr=args.learning_rate)
     action = [0,0.25,0.5,0.75,1]
     Input = torch.FloatTensor(state_dataset)
-    label = torch.LongTensor(action_dataset)
+    label = torch.FloatTensor(action_dataset)
     batchsize = args.batch_size
     epoch = args.epochs
     model.to(device)
