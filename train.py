@@ -6,7 +6,7 @@ Created on Sat Dec 23 19:51:19 2023
 """
 
 import numpy as np
-from model import DIRL, QLoss, prob_calculation, plot_prob, plot_loss
+from model import DIRL, QLoss, prob_calculation, plot_prob, plot_loss, Res_DIRL
 from model import Net
 import torch
 from torch import nn, optim
@@ -25,7 +25,7 @@ def main(args):
     action_dataset = min_max_scaler.fit_transform(dataset[:,13].reshape(-1, 1))
 
     # model train
-    model = DIRL()
+    model = Res_DIRL()
     criterion = QLoss()
     optimizer = optim.Adam(model.parameters(), lr=args.learning_rate)
     action = [0,0.25,0.5,0.75,1]
