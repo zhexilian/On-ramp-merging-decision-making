@@ -12,4 +12,12 @@ To run this algorithm:
 
 python train.py --epochs 1000 --batch_size 256 --learning_rate 0.001
 
+results are similar to those of the original authors:
+
+![图片](https://github.com/zhexilian/On-ramp-merging-decision-making/assets/148358711/a5fc35b1-91c1-4ec7-a1e8-2373c7bda9bb)
+
+ours:
+
+![图片](https://github.com/zhexilian/On-ramp-merging-decision-making/assets/148358711/f5e714c3-907c-411a-941a-d3350f541f20)
+
 
